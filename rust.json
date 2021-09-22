@@ -11,5 +11,16 @@
       "    }",
       "}"
     ]
+  },
+
+  "recursive_function": {
+    "prefix": "pg:recursive_function",
+    "body": [
+      "fn recur($1: $2) -> $3 {",
+      "    if $4 { return $5; }",
+      "",
+      "    return recur($6);",
+      "}"
+    ]
   }
 }
