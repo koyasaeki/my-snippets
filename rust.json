@@ -24,6 +24,19 @@
     ]
   },
 
+  "slow_fibonacci_function": {
+    "prefix": "pg:slow_fibonacci_function",
+    "body": [
+      "fn fib(n: usize) -> usize {",
+      "    match n {",
+      "        0 => return 0,",
+      "        1 => return 1,",
+      "        _ => return fib(n - 1) + fib(n - 2),",
+      "    }",
+      "}"
+    ]
+  },
+
   "gcd_function": {
     "prefix": "pg:gcd_function",
     "body": [
