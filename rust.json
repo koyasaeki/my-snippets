@@ -37,6 +37,19 @@
     ]
   },
 
+  "fast_fibonacci_function": {
+    "prefix": "pg:fast_fibonacci_function",
+    "body": [
+      "fn fib(n: usize) -> usize {",
+      "    let mut f: Vec<usize> = vec![0; n + 1];",
+      "    f[1] = 1;",
+      "    for i in 2..(n + 1) {",
+      "    f[i] = f[i - 1] + f[i - 2];",
+      "}",
+      "    return f[n];"
+    ]
+  },
+
   "gcd_function": {
     "prefix": "pg:gcd_function",
     "body": [
