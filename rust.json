@@ -22,5 +22,17 @@
       "    return recur($6);",
       "}"
     ]
+  },
+
+  "gcd_function": {
+    "prefix": "pg:gcd_function",
+    "body": [
+      "fn gcd(m: usize, n: usize) -> usize {",
+      "    match n {",
+      "        0 => return m,",
+      "        _ => return gcd(n, m % n),",
+      "    }",
+      "}"
+    ]
   }
 }
